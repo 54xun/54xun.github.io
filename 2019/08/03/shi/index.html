@@ -4,15 +4,19 @@
 <head><meta name="generator" content="Hexo 3.9.0">
   <meta charset="utf-8">
   
-  <title>Archives: 2019/7 | 54xun</title>
+  <title>搭建LAMP环境 | 54xun</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="54xun">
-<meta property="og:url" content="http://yoursite.com/archives/2019/07/index.html">
+  <meta name="description" content="LAMP=LINUX+APACHE+MYSQL+PHP，这是Linux下最常见的提供web服务的组合之一  浏览器–&amp;gt;提交账户密码–&amp;gt;传输给服务器–&amp;gt;服务器接受处理Apache是中间件 后端和前端的软件（中间件特性：识别请求。根据客户端请求的内容，判断，是将请求装发给后端还是自己处理，只有请求的文件后缀是PHP、JSP、ASP..可执行的的，才会将请求装发给后端）Post提交用户">
+<meta property="og:type" content="article">
+<meta property="og:title" content="搭建LAMP环境">
+<meta property="og:url" content="http://yoursite.com/2019/08/03/shi/index.html">
 <meta property="og:site_name" content="54xun">
+<meta property="og:description" content="LAMP=LINUX+APACHE+MYSQL+PHP，这是Linux下最常见的提供web服务的组合之一  浏览器–&amp;gt;提交账户密码–&amp;gt;传输给服务器–&amp;gt;服务器接受处理Apache是中间件 后端和前端的软件（中间件特性：识别请求。根据客户端请求的内容，判断，是将请求装发给后端还是自己处理，只有请求的文件后缀是PHP、JSP、ASP..可执行的的，才会将请求装发给后端）Post提交用户">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2019-08-03T13:49:02.043Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="54xun">
+<meta name="twitter:title" content="搭建LAMP环境">
+<meta name="twitter:description" content="LAMP=LINUX+APACHE+MYSQL+PHP，这是Linux下最常见的提供web服务的组合之一  浏览器–&amp;gt;提交账户密码–&amp;gt;传输给服务器–&amp;gt;服务器接受处理Apache是中间件 后端和前端的软件（中间件特性：识别请求。根据客户端请求的内容，判断，是将请求装发给后端还是自己处理，只有请求的文件后缀是PHP、JSP、ASP..可执行的的，才会将请求装发给后端）Post提交用户">
 <meta name="twitter:creator" content="@lazzzis">
 <link rel="publisher" href="https://plus.google.com/114550357749490779368">
   
@@ -97,49 +101,53 @@
 
 
 <div class="container">
-      
+      <article class="article-full">
 
-<div class="row">
-    <div class="side-bar col s12 m3 l3">
-        <article class="list">
-            
-                <h5>2019 - 7</h5>
-            
-            
-            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/08/">Aug - 2019</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/07/">Jul - 2019</a><span class="archive-list-count">1</span></li></ul>            
-        </article>
-    </div>
-    <div class="main-bar col s12 m9 l9">
+    <!-- Title -->
+    <h2 class="blog-item-title">
+        <a href="/2019/08/03/shi/">
+            搭建LAMP环境
+        </a>
+    </h2>
+
+    <!-- Date and Author -->
+    <p class="blog-item-meta">
+        Published on 2019 Aug 03 20:54:30
         
-         <article class="blog-post">
+    
+        </br>
+        Last Updated on 2019 Aug 03 21:49:02
+        
+    </p>
 
 
-        <!-- Date and Author -->
-        <div class="article-meta">
-            2019-07-31
-            
-        </div>
-
-        <div class="article-brief">
-            <!-- Title -->
-            <h3 class="blog-post-title">
-                <a href="/2019/07/31/hello-world/">
-                    Hello World
-                </a>
-            </h3>
-            
-            
-        </div>
     <!-- Content -->
+    <p>LAMP=LINUX+APACHE+MYSQL+PHP，这是Linux下最常见的提供web服务的组合之一</p>
+<blockquote>
+<p>浏览器–&gt;提交账户密码–&gt;传输给服务器–&gt;服务器接受处理<br>Apache是中间件 后端和前端的软件（中间件特性：识别请求。根据客户端请求的内容，判断，是将请求装发给后端还是自己处理，只有请求的文件后缀是PHP、JSP、ASP..可执行的的，才会将请求装发给后端）<br>Post提交用户名，密码–&gt;apache转交给PHP–&gt;php查询后向数据库中进行查询–&gt;查询成功，就登录成功</p>
+</blockquote>
+<h3 id="搭建命令"><a href="#搭建命令" class="headerlink" title="搭建命令"></a>搭建命令</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">$   yum install httpd</span><br><span class="line">    systemctl <span class="built_in">enable</span> httpd</span><br><span class="line">    </span><br><span class="line">    systemctl start httpd</span><br><span class="line">    </span><br><span class="line">    firewallcmd --add-pot 80/ tcp --zone=public --permanen:</span><br><span class="line"></span><br><span class="line">      yum install mariadb-server</span><br><span class="line"></span><br><span class="line">      systemctl <span class="built_in">enable</span> mar iadb ?systemctl start ma riadb</span><br><span class="line"></span><br><span class="line">      mysql_ secure_ init...</span><br><span class="line"></span><br><span class="line">      yum install php php-gd php-mysql php-pdo php-*</span><br><span class="line"></span><br><span class="line">      systemctl restart httpd</span><br><span class="line"></span><br><span class="line">      chown R apache : apache /var/www/html</span><br></pre></td></tr></table></figure>
 
-    <!-- Only display the Read More link if we are displaying an excerpt -->
 
- </article>
 
-        
-        
-    </div>
+    <hr/>
+
+    
+        <div class="social-share" data-disabled="weibo,qzone,qq,tencent,douban,linkedin,diandian"></div>
+    
+
+    <div class="blog-post">
+
+    <!--[...]-->
+    
+    <!-- Comments -->
 </div>
+
+    <!-- Tags and Categories links -->
+
+
+</article>
+
 
 </div>
 
