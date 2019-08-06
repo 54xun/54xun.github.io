@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<!-- Head -->
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="utf-8">
+  
+  <title>循环 | 54xun</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="在代码中 重复执行一段相同的代码while循环与for循环一样 while循环12345678910111213141516171819202122232425262728293031323334//运行程序后，等待用户输入，用户输入一个成绩，就输出成绩的级别，之后继续等待用户输入，只有等用户输入q、quit或者exit，然后程序结束//获取用户输入//$num = fgets(STDIN);//">
+<meta property="og:type" content="article">
+<meta property="og:title" content="循环">
+<meta property="og:url" content="http://yoursite.com/2019/08/06/b/index.html">
+<meta property="og:site_name" content="54xun">
+<meta property="og:description" content="在代码中 重复执行一段相同的代码while循环与for循环一样 while循环12345678910111213141516171819202122232425262728293031323334//运行程序后，等待用户输入，用户输入一个成绩，就输出成绩的级别，之后继续等待用户输入，只有等用户输入q、quit或者exit，然后程序结束//获取用户输入//$num = fgets(STDIN);//">
+<meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2019-08-06T13:52:13.430Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="循环">
+<meta name="twitter:description" content="在代码中 重复执行一段相同的代码while循环与for循环一样 while循环12345678910111213141516171819202122232425262728293031323334//运行程序后，等待用户输入，用户输入一个成绩，就输出成绩的级别，之后继续等待用户输入，只有等用户输入q、quit或者exit，然后程序结束//获取用户输入//$num = fgets(STDIN);//">
+<meta name="twitter:creator" content="@lazzzis">
+<link rel="publisher" href="https://plus.google.com/114550357749490779368">
+  
+    <link rel="alternative" href="/atom.xml" title="54xun" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="https://s18.postimg.org/k7qcci1t5/s_icon.png">
+  
+  <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css" integrity="sha384-dNpIIXE8U05kAbPhy3G1cz+yZmTzA6CY8Vg/u2L9xRnHjJiAK76m2BIEaSEV+/aU" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.15/css/share.min.css">
+    <style>
+        .hljs-line-numbers {
+            text-align: right;
+            border-right: 1px solid #ccc;
+            color: #999;
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+    </style>
+    <!-- <link rel="stylesheet" href="/css/style.css"> -->
+    <!-- <link rel="stylesheet" href="/css/code.css"> -->
+    <link rel="stylesheet" href="/css/style.css?version=8-6-53-44" type="text/css">
+    <link rel="stylesheet" href="/css/code.css?version=8-6-53-44" type="text/css">
+
+</head>
+
+
+<body>
+
+<header>
+    <div class="navbar-fixed">
+        <nav class="blue darken-3 nav-extended">
+            <div class="nav-wrapper">
+                <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+                <ul id="nav-mobile" class="hide-on-med-and-down">
+                    
+                        <li><a href="/" class="nav-logo">54xun</a></li>
+                    
+                    
+                    <li><a class="" href="/">Home</a></li>
+                    
+                    <li><a class="" href="/archives">Archives</a></li>
+                    
+                    <li><a class="" href="/categories">Categories</a></li>
+                    
+                    <li><a class="" href="/tags">Tags</a></li>
+                    
+                    <li><a class="" href="/links">Links</a></li>
+                    
+                    <li><a class="" href="/about">About</a></li>
+                    
+                </ul>
+            </div>
+        </nav>
+
+    </div>
+    <ul class="side-nav" id="mobile-demo">
+        
+        <li><a class="" href="/">Home</a></li>
+        
+        <li><a class="" href="/archives">Archives</a></li>
+        
+        <li><a class="" href="/categories">Categories</a></li>
+        
+        <li><a class="" href="/tags">Tags</a></li>
+        
+        <li><a class="" href="/links">Links</a></li>
+        
+        <li><a class="" href="/about">About</a></li>
+        
+    </ul>
+    <!--You have to move ul out to make sure this work in mobile environment-->
+</header>
+
+
+<div class="container">
+      <article class="article-full">
+
+    <!-- Title -->
+    <h2 class="blog-item-title">
+        <a href="/2019/08/06/b/">
+            循环
+        </a>
+    </h2>
+
+    <!-- Date and Author -->
+    <p class="blog-item-meta">
+        Published on 2019 Aug 06 21:26:26
+        
+    
+        </br>
+        Last Updated on 2019 Aug 06 21:52:13
+        
+    </p>
+
+
+    <!-- Content -->
+    <p>在代码中 重复执行一段相同的代码<br>while循环与for循环一样</p>
+<h3 id="while循环"><a href="#while循环" class="headerlink" title="while循环"></a>while循环</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line">//运行程序后，等待用户输入，用户输入一个成绩，就输出成绩的级别，之后继续等待用户输入，只有等用户输入q、quit或者<span class="built_in">exit</span>，然后程序结束</span><br><span class="line">//获取用户输入</span><br><span class="line">//<span class="variable">$num</span> = fgets(STDIN);</span><br><span class="line">//var_dump(<span class="variable">$num</span>); //STDIN获取到的内容，会多出一个换行符</span><br><span class="line">//不停的获取输入，并且输出</span><br><span class="line"><span class="keyword">while</span> (1)&#123;</span><br><span class="line">  </span><br><span class="line">    <span class="built_in">echo</span> <span class="string">"请输入成绩：\n"</span>;</span><br><span class="line">    <span class="variable">$input</span> =fgets(STDIN);</span><br><span class="line">    //var_dump(<span class="variable">$input</span>);</span><br><span class="line">    <span class="variable">$input</span> = trim(<span class="variable">$input</span>);</span><br><span class="line">    <span class="keyword">if</span> (<span class="variable">$input</span> == <span class="string">'q'</span> || <span class="variable">$input</span> == <span class="string">'quit'</span> || <span class="variable">$input</span> == <span class="string">'exit'</span>)&#123;</span><br><span class="line">        die(<span class="string">'退出程序'</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    settype(<span class="variable">$input</span>,<span class="string">'float'</span>);</span><br><span class="line">    <span class="keyword">if</span> (<span class="variable">$input</span> &gt; 100 || <span class="variable">$input</span> &lt;0)&#123;</span><br><span class="line">        <span class="built_in">echo</span> <span class="string">"输入的成绩是错误的！\n"</span>;</span><br><span class="line">        <span class="built_in">continue</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span>(<span class="variable">$input</span> &gt;= 90 &amp;&amp; <span class="variable">$input</span>&lt;= 100)&#123;</span><br><span class="line">        <span class="built_in">echo</span> <span class="string">"成绩为&#123;<span class="variable">$input</span>&#125;,属于A级!\n"</span>;</span><br><span class="line">    &#125;elseif (<span class="variable">$input</span> &gt;=60 &amp;&amp; <span class="variable">$input</span> &lt; 90)&#123;</span><br><span class="line">        <span class="built_in">echo</span> <span class="string">"成绩为&#123;<span class="variable">$input</span>&#125;,属于B级!\n"</span>;</span><br><span class="line">    &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">        <span class="built_in">echo</span> <span class="string">"成绩为&#123;<span class="variable">$input</span>&#125;,属于C级!\n"</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line">//由于在循环当中，并且循环后没有代码可执行。如果循环结束，则程序结束</span><br><span class="line">//程序结束 die() <span class="built_in">exit</span>()</span><br><span class="line"></span><br><span class="line">//判断输入的内容是否是q quit <span class="built_in">exit</span></span><br><span class="line">//  <span class="keyword">if</span> (<span class="variable">$input</span> == <span class="string">'q'</span> || <span class="variable">$input</span> == <span class="string">'quit'</span> || <span class="variable">$input</span> == <span class="string">'exit'</span>)&#123;</span><br><span class="line">//        die(<span class="string">'退出程序'</span>);</span><br></pre></td></tr></table></figure>
+
+<h3 id="for循环"><a href="#for循环" class="headerlink" title="for循环"></a>for循环</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line">//根据每周有七天，输出今天是周几，今天要干什么？</span><br><span class="line">//用<span class="keyword">for</span>循环加条件控制写</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> (<span class="variable">$i</span> = 1; <span class="variable">$i</span> &lt; 8; <span class="variable">$i</span> ++ )&#123;</span><br><span class="line">    switch (<span class="variable">$i</span>)&#123;</span><br><span class="line">        <span class="keyword">case</span> 1:</span><br><span class="line">            <span class="built_in">echo</span> <span class="string">"今天是周一，今天要上课！"</span>;</span><br><span class="line">            <span class="built_in">break</span>;</span><br><span class="line">        <span class="keyword">case</span> 2:</span><br><span class="line">            <span class="built_in">echo</span> <span class="string">"今天是周二，今天要上课！"</span>;</span><br><span class="line">            <span class="built_in">break</span>;</span><br><span class="line">        <span class="keyword">case</span> 3:</span><br><span class="line">            <span class="built_in">echo</span> <span class="string">"今天是周三，今天要上课！"</span>;</span><br><span class="line">            <span class="built_in">break</span>;</span><br><span class="line">        <span class="keyword">case</span> 4:</span><br><span class="line">            <span class="built_in">echo</span> <span class="string">"今天是周四，今天要上课！"</span>;</span><br><span class="line">            <span class="built_in">break</span>;</span><br><span class="line">        <span class="keyword">case</span> 5:</span><br><span class="line">            <span class="built_in">echo</span> <span class="string">"今天是周五，今天要上课！"</span>;</span><br><span class="line">            <span class="built_in">break</span>;</span><br><span class="line">        <span class="keyword">case</span> 6:</span><br><span class="line">            <span class="built_in">echo</span> <span class="string">"今天是周六，今天要通宵！"</span>;</span><br><span class="line">            <span class="built_in">break</span>;</span><br><span class="line">        <span class="keyword">case</span> 7:</span><br><span class="line">            <span class="built_in">echo</span> <span class="string">"今天是周日，今天要睡觉！"</span>;</span><br><span class="line">            <span class="built_in">break</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">for</span>(<span class="variable">$i</span> =1; <span class="variable">$i</span>&lt;8;<span class="variable">$i</span>++)&#123;</span><br><span class="line">    <span class="keyword">if</span> (<span class="variable">$i</span>&lt;=5)&#123;</span><br><span class="line">        <span class="built_in">echo</span> <span class="string">"今天是周&#123;<span class="variable">$i</span>&#125;,今天要上课！"</span>;</span><br><span class="line">    &#125;elseif (<span class="variable">$i</span>==6)&#123;</span><br><span class="line">        <span class="built_in">echo</span> <span class="string">"今天是周六,今天要通宵！"</span>;</span><br><span class="line">    &#125;elseif (<span class="variable">$i</span>==7)&#123;</span><br><span class="line">        <span class="built_in">echo</span> <span class="string">"今天是周日,今天要睡觉！"</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>continue:跳过本次循环<br>break:退出当前循环</p>
+</blockquote>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> (<span class="variable">$i</span>=1;<span class="variable">$i</span>&lt;10;<span class="variable">$i</span>++)&#123;</span><br><span class="line">    <span class="keyword">if</span> (<span class="variable">$i</span>&gt;5)&#123;</span><br><span class="line">        <span class="built_in">break</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">echo</span> <span class="variable">$i</span> . <span class="string">"&lt;br&gt;"</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">for</span> (<span class="variable">$i</span>=1;<span class="variable">$i</span>&lt;10;<span class="variable">$i</span>++)&#123;</span><br><span class="line">    <span class="keyword">if</span> (<span class="variable">$i</span> ==5)&#123;</span><br><span class="line">        <span class="built_in">continue</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">echo</span> <span class="variable">$i</span> . <span class="string">"&lt;br&gt;"</span>;</span><br></pre></td></tr></table></figure>
+
+<h3 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h3><blockquote>
+<p>数组是特殊的变量，可以在单个变量中同时存在一个或一个以上的值，并且可以通过下标来访问其中的某一个值。在PHP中，用array()函数创建数组。同时在PHP中数组中可以存储任意类型的数据<br>分为索引数组和关联数组</p>
+</blockquote>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">创建数组</span><br><span class="line"><span class="variable">$arr</span> = array（）</span><br><span class="line"><span class="variable">$arr</span> = array（1,2,3,4,5）</span><br><span class="line"><span class="variable">$arr</span> = array（‘name’=&gt; ‘zs’,’age’=&gt;18）</span><br><span class="line">下边的方法之后又在PHP5.4之后才可以</span><br><span class="line"><span class="variable">$arr</span> = [1,2,3,4,5]</span><br><span class="line"><span class="variable">$arr</span> = [‘name’=&gt;’zs’,’age’=&gt;18]</span><br><span class="line"><span class="variable">$arr</span> = []</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">//<span class="variable">$arr</span> =array(1,2,3,4);//创建数组时可以直接向数组赋值</span><br><span class="line">//<span class="built_in">echo</span> <span class="variable">$arr</span>[3];</span><br><span class="line">//<span class="variable">$arr2</span> =array();//创建数组时，可以直接创建一个空数组</span><br><span class="line">//<span class="built_in">echo</span> <span class="variable">$arr</span>;</span><br><span class="line">//<span class="built_in">echo</span> <span class="string">"&lt;br&gt;"</span>;</span><br><span class="line">//var_dump(<span class="variable">$arr</span>);</span><br><span class="line">//<span class="built_in">echo</span> <span class="variable">$arr2</span>;</span><br><span class="line">//<span class="built_in">echo</span> <span class="string">"&lt;br&gt;"</span>;</span><br><span class="line">//var_dump(<span class="variable">$arr2</span>);</span><br><span class="line">//索引数组   取内容只能通过下标取值</span><br><span class="line">//<span class="variable">$arr</span> = array(<span class="string">'name'</span> =&gt; <span class="string">'zs'</span>,<span class="string">'age'</span>=&gt;19);</span><br><span class="line">//关联数组 取内容可以通过下标取值，可以通过键取值</span><br><span class="line">//<span class="built_in">echo</span> <span class="variable">$arr</span>[<span class="string">'name'</span>];</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>为什么从0开始？因为数组中，下标是从0开始</p>
+</blockquote>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$arr</span> = array(1,2,3,4,5,6,);</span><br><span class="line"></span><br><span class="line">foreach (<span class="variable">$arr</span> as <span class="variable">$key</span> =&gt; <span class="variable">$value</span>)&#123;</span><br><span class="line">    <span class="built_in">echo</span> <span class="variable">$key</span> . <span class="string">'=&gt;'</span> . <span class="variable">$value</span> . <span class="string">'&lt;br&gt;'</span>;</span><br><span class="line">    //<span class="built_in">echo</span> <span class="variable">$value</span> . <span class="string">'=&gt;'</span> . <span class="variable">$key</span> . <span class="string">'&lt;br&gt;'</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+    <hr/>
+
+    
+        <div class="social-share" data-disabled="weibo,qzone,qq,tencent,douban,linkedin,diandian"></div>
+    
+
+    <div class="blog-post">
+
+    <!--[...]-->
+    
+    <!-- Comments -->
+</div>
+
+    <!-- Tags and Categories links -->
+
+
+</article>
+
+
+</div>
+
+
+<footer class="grey darken-3">
+    <div class="footer-link">
+        
+        <a href="https://github.com/lazzzis" target="_blank"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
+        
+        
+        <a href="https://twitter.com/lazzzis" target="_blank"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
+        
+        
+        <a href="https://www.instagram.com/lazzzis" target="_blank"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+        
+        
+        
+        <a href="https://plus.google.com/114550357749490779368" target="_blank"><i class="fa fa-google-plus-official fa-2x" aria-hidden="true"></i>
+        
+        
+        <a href="http://music.163.com/#/user/home?id=30744948" target="_blank"><i class="fa fa-music fa-2x" aria-hidden="true"></i></a>
+        
+        
+          <a href="/atom.xml" target="_blank" title="rss_feed"><i class="fa fa-rss fa-2x" aria-hidden="true"></i></a>
+        
+    </div>
+    <div class="footer-ps">
+        <p>Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> -
+            &copy; 2019 <a
+                    
+                    href="https://github.com/lazzzis" target="_blank"
+                    
+            > John Doe</a> - Theme <a href="https://github.com/lazzzis/hexo-theme-mls" target="_blank">MLS</a>
+        </p>
+    </div>
+</footer>
+
+<!--Import jQuery before materialize.js-->
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+
+<script src="//cdn.bootcss.com/highlight.js/9.6.0/highlight.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.15/js/social-share.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fitvids/1.1.0/jquery.fitvids.min.js"></script>
+<script src="/js/addition.js"></script>
+<script src="/js/zooming.js"></script>
+<!-- Disqus Comments -->
+
+
+
+<script>
+    // https://github.com/srobbin/jquery-backstretch
+    $.backstretch("/css/images/background.jpg?version=8-6-53-44");
+
+    
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-87274131-1', 'auto');
+        ga('send', 'pageview');
+    
+
+</script>
+
+
+</body>
+
+</html>
